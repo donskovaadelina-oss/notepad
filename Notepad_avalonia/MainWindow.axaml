@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Notepad_avalonia.MainWindow"
+        Title="Notepad_avalonia" Width="600" Height="400">
+        <DockPanel>
+			<Menu DockPanel.Dock="Top">
+				<MenuItem Header="File">
+					<MenuItem Header="_Open" Click="OpenFile_Click"/>
+                    <MenuItem Header="_Close" Click="CloseFile_Click"/>
+                    <Separator/>
+                    <MenuItem Header="_Save" Click="SaveFile_Click"/>
+                </MenuItem>
+
+                <MenuItem Header="Edit">
+					<MenuItem Header="_Paste" Click=""/>
+                    <MenuItem Header="_Copy" Click=""/>
+                    <Separator/>
+                    <MenuItem Header="_Delete" Click=""/>
+                </MenuItem>
+            </Menu>
+            <TextBox Name="Editor" FontSize="14"
+                     TextWrapping="Wrap"
+                     AcceptsReturn="True"
+                     AcceptsTab="True"/>
+        </DockPanel>
+
+</Window>
